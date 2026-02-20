@@ -51,6 +51,11 @@
   </url>
 
   <url>
+    <loc>https://2gitqwertz.github.io/breazee/support/resources/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://2gitqwertz.github.io/breazee/eula/</loc>
     <priority>0.5</priority>
   </url>
