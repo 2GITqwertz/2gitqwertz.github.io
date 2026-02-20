@@ -185,7 +185,7 @@ a {
 }
 
 .hero__media img {
-  width: min(100%, 520px);
+  width: min(100%, 312px);
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 28px 40px rgba(0, 0, 0, 0.16));
