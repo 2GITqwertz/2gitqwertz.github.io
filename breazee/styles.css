@@ -139,6 +139,8 @@ a {
 
 .app-store-badge img {
   display: block;
+  width: 120px;
+  height: 40px;
 }
 
 .button {
