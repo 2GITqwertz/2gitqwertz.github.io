@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Entwicklungs- und interne Bereiche blockieren
+Disallow: /draft/
+Disallow: /dev/
+Disallow: /private/
+
+# Imprint / Impressum nicht indexieren
+Disallow: /imprint
+Disallow: /impressum
+Disallow: /senet/imprint
+Disallow: /breazee/imprint
+Disallow: /hiitrix/imprint
+
+Sitemap: https://2gitqwertz.github.io/sitemap.xml
