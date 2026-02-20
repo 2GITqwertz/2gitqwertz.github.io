@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Senet Reborn social card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070d19"/>
+      <stop offset="1" stop-color="#1f2f4a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="210" cy="120" r="180" fill="#f59e0b" opacity="0.12"/>
+  <circle cx="1020" cy="90" r="150" fill="#22d3ee" opacity="0.12"/>
+  <rect x="120" y="120" width="960" height="390" rx="28" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+  <g stroke="#334155" stroke-width="2" opacity="0.7">
+    <path d="M200 220h800M200 305h800M200 390h800"/>
+    <path d="M320 180v290M440 180v290M560 180v290M680 180v290M800 180v290"/>
+  </g>
+  <g>
+    <circle cx="260" cy="220" r="18" fill="url(#gold)"/>
+    <circle cx="500" cy="305" r="18" fill="url(#gold)"/>
+    <circle cx="740" cy="390" r="18" fill="url(#gold)"/>
+    <circle cx="920" cy="220" r="18" fill="#22d3ee"/>
+    <circle cx="800" cy="305" r="18" fill="#22d3ee"/>
+  </g>
+  <text x="120" y="74" fill="#f8fafc" font-size="58" font-family="Avenir Next, Segoe UI, sans-serif">Senet Reborn</text>
+  <text x="122" y="560" fill="#dbe5f5" font-size="30" font-family="Avenir Next, Segoe UI, sans-serif">Ancient Strategy. Modern Precision.</text>
+</svg>
