@@ -133,6 +133,14 @@ a {
   flex-wrap: wrap;
 }
 
+.app-store-badge {
+  margin-top: 1rem;
+}
+
+.app-store-badge img {
+  display: block;
+}
+
 .button {
   text-decoration: none;
   border-radius: 10px;
