@@ -202,6 +202,42 @@ a {
   text-decoration-color: rgba(251, 191, 36, 0.5);
 }
 
+.legal {
+  max-width: 760px;
+  text-align: left;
+}
+
+.legal h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 7vw, 2.6rem);
+}
+
+.legal h2 {
+  margin: 0 0 1.5rem;
+  color: var(--text-main);
+  font-size: clamp(1.05rem, 4.2vw, 1.35rem);
+}
+
+.legal h3 {
+  margin: 1.4rem 0 0.45rem;
+  color: #e2e8f0;
+  font-size: 1.03rem;
+}
+
+.legal p,
+.legal li {
+  color: var(--text-muted);
+}
+
+.legal ul {
+  margin: 0.2rem 0 0.6rem;
+  padding-left: 1.2rem;
+}
+
+.legal a {
+  text-decoration-color: rgba(251, 191, 36, 0.5);
+}
+
 @media (min-width: 700px) {
   .hero {
     padding-top: 5.75rem;

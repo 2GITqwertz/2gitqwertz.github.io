@@ -10,6 +10,8 @@ Disallow: /private/
 Disallow: /imprint
 Disallow: /impressum
 Disallow: /senet/imprint
+Disallow: /privacy
+Disallow: /senet/privacy
 Disallow: /breazee/imprint
 Disallow: /hiitrix/imprint
 
