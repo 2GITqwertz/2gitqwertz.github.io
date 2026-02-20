@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-label="Turn focus">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="1" stop-color="#24304c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect x="140" y="110" width="1000" height="580" rx="34" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+  <rect x="210" y="180" width="860" height="290" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <g stroke="#38bdf8" stroke-width="4" stroke-dasharray="12 10" fill="none" opacity="0.8">
+    <path d="M300 325h220"/>
+    <path d="M520 325h220"/>
+    <path d="M740 325h220"/>
+  </g>
+  <g>
+    <circle cx="300" cy="325" r="34" fill="#f59e0b"/>
+    <circle cx="520" cy="325" r="34" fill="#f59e0b"/>
+    <circle cx="740" cy="325" r="34" fill="#22d3ee"/>
+    <circle cx="960" cy="325" r="34" fill="#22d3ee"/>
+  </g>
+  <rect x="210" y="510" width="400" height="100" rx="14" fill="#1e293b"/>
+  <text x="242" y="572" fill="#e2e8f0" font-size="34" font-family="Avenir Next, Segoe UI, sans-serif">Turn Focus: Move 4</text>
+  <text x="210" y="92" fill="#f8fafc" font-size="38" font-family="Avenir Next, Segoe UI, sans-serif">Senet Reborn - Turn Focus</text>
+</svg>

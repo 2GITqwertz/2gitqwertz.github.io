@@ -1,0 +1,22 @@
+{
+  "name": "Senet Reborn",
+  "short_name": "Senet",
+  "description": "Ancient strategy game prototype landing page",
+  "start_url": "/senet/",
+  "scope": "/senet/",
+  "display": "standalone",
+  "background_color": "#0b1426",
+  "theme_color": "#0b1426",
+  "icons": [
+    {
+      "src": "/senet/assets/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/senet/assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

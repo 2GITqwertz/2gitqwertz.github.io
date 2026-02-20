@@ -3,30 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Senet Reborn – Ancient Strategy. Modern Precision.</title>
+  <title>Senet Reborn - Ancient Strategy. Modern Precision.</title>
   <meta name="description" content="Senet Reborn reimagines one of the oldest board games with elegant visuals and refined gameplay.">
   <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="/senet/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/senet/assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="/senet/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/senet/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/senet/assets/icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/senet/site.webmanifest">
+  <meta name="theme-color" content="#0b1426">
+
+  <link rel="stylesheet" href="/senet/styles.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="container">
+        <span class="hero__badge">Pilotsite - Senet Prototype</span>
+        <h1>Senet Reborn</h1>
+        <p class="hero__subtitle">Ancient Strategy. Modern Precision. Ein mystischer Prototyp mit klarer Spieloberflaeche und fokussiertem Flow fuer taktische Zuege.</p>
 
-<header>
-  <h1>Senet Reborn</h1>
-  <p>Ancient Strategy. Modern Precision.</p>
-</header>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#screenshots">Screens ansehen</a>
+          <a class="button button--ghost" href="/impressum/">Impressum</a>
+        </div>
 
-<section>
-  <h2>Two Rule Systems</h2>
-  <p>Classic Mode & Flow Mode</p>
-</section>
+        <section class="panel" aria-label="Kernmerkmale">
+          <div class="panel__grid">
+            <article class="panel__card">
+              <h2>Two Rule Systems</h2>
+              <p>Classic Mode fuer Puristen, Flow Mode fuer modernes Turn-Pacing.</p>
+            </article>
+            <article class="panel__card">
+              <h2>Focused Atmosphere</h2>
+              <p>Subtile Lichteffekte, klare Kontraste und reduzierte Ablenkung.</p>
+            </article>
+            <article class="panel__card">
+              <h2>Board Readability</h2>
+              <p>Zugoptionen und Feldstatus sind auf allen Geraeten sofort erfassbar.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </header>
 
-<section>
-  <h2>Designed for Focused Play</h2>
-  <p>Elegant visuals. Subtle atmosphere. Thoughtful strategy.</p>
-</section>
+    <main>
+      <section id="screenshots" class="screenshots" aria-labelledby="screenshots-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="screenshots-title">Screenshots</h2>
+            <p>Drei Ansichten aus dem aktuellen Pilotstand: Board, Zugfokus und Ergebnisscreen.</p>
+          </div>
 
-<footer>
-  <a href="/impressum/">Impressum</a>
-</footer>
+          <div class="shot-grid">
+            <figure class="shot">
+              <img src="/senet/assets/screenshots/senet-board-view.svg" alt="Senet Reborn Board-Ansicht mit Markierungen fuer moegliche Zuege">
+              <figcaption>Board Overview mit aktiven Feldindikatoren.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="/senet/assets/screenshots/senet-turn-focus.svg" alt="Turn-Focus Ansicht mit hervorgehobenen Spielfiguren">
+              <figcaption>Turn Focus mit klaren Move-Hinweisen.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="/senet/assets/screenshots/senet-end-state.svg" alt="End State Ansicht mit Siegeranzeige und Statistik">
+              <figcaption>End State mit Ergebnis und Key-Stats.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <a href="/impressum/">Impressum</a>
+    </footer>
+  </div>
 </body>
 </html>

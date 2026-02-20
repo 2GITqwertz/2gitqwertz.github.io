@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Senet icon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <rect x="72" y="72" width="368" height="368" rx="52" fill="#111827" stroke="#334155" stroke-width="14"/>
+  <g fill="none" stroke="#334155" stroke-width="10" opacity="0.9">
+    <path d="M134 180h244M134 256h244M134 332h244"/>
+    <path d="M196 132v248M256 132v248M316 132v248"/>
+  </g>
+  <circle cx="196" cy="180" r="25" fill="url(#g)"/>
+  <circle cx="316" cy="256" r="25" fill="url(#g)"/>
+  <circle cx="256" cy="332" r="25" fill="#fde68a"/>
+</svg>

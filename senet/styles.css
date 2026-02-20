@@ -1,0 +1,235 @@
+:root {
+  --bg-1: #06090f;
+  --bg-2: #111827;
+  --bg-3: #1a1b3a;
+  --text-main: #f8fafc;
+  --text-muted: #bcc8da;
+  --line: rgba(226, 232, 240, 0.18);
+  --gold: #fbbf24;
+  --teal: #22d3ee;
+  --card: rgba(12, 18, 32, 0.74);
+  --hero-glow: radial-gradient(circle at 18% 24%, rgba(251, 191, 36, 0.34), transparent 48%),
+    radial-gradient(circle at 78% 18%, rgba(34, 211, 238, 0.21), transparent 43%),
+    radial-gradient(circle at 40% 80%, rgba(129, 140, 248, 0.22), transparent 52%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background: linear-gradient(165deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
+  color: var(--text-main);
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--hero-glow);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.hero {
+  padding: 4.25rem 0 2.5rem;
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(251, 191, 36, 0.42);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: #fde68a;
+  background: rgba(56, 35, 10, 0.35);
+}
+
+.hero h1 {
+  margin: 1rem auto 0.9rem;
+  max-width: 15ch;
+  font-size: clamp(2rem, 9vw, 4rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.hero__subtitle {
+  margin: 0 auto;
+  max-width: 55ch;
+  color: var(--text-muted);
+  font-size: clamp(1rem, 2.9vw, 1.15rem);
+}
+
+.hero__actions {
+  margin-top: 1.45rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.7rem 1.05rem;
+}
+
+.button--primary {
+  background: linear-gradient(120deg, #f59e0b, #fcd34d);
+  color: #16120b;
+}
+
+.button--ghost {
+  border-color: rgba(226, 232, 240, 0.34);
+  background: rgba(15, 23, 42, 0.54);
+}
+
+.panel {
+  margin-top: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(150deg, rgba(8, 14, 28, 0.8), rgba(13, 26, 43, 0.58));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  padding: 1.1rem;
+}
+
+.panel__grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr;
+}
+
+.panel__card {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 0.95rem;
+}
+
+.panel__card h2 {
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.panel__card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.screenshots {
+  padding: 2rem 0 2.8rem;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 62ch;
+  margin: 0 auto 1.2rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 6vw, 2.1rem);
+}
+
+.section-head p {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+}
+
+.shot-grid {
+  display: grid;
+  gap: 0.95rem;
+  grid-template-columns: 1fr;
+}
+
+.shot {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.57);
+}
+
+.shot img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  width: 100%;
+}
+
+.shot figcaption {
+  padding: 0.7rem 0.8rem 0.95rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.footer a {
+  text-decoration-color: rgba(251, 191, 36, 0.5);
+}
+
+@media (min-width: 700px) {
+  .hero {
+    padding-top: 5.75rem;
+  }
+
+  .panel {
+    padding: 1.25rem;
+  }
+
+  .panel__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shot:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 980px) {
+  .shot-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shot:first-child {
+    grid-column: auto;
+  }
+}
