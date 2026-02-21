@@ -242,7 +242,7 @@ a {
 
 .article,
 .legal {
-  width: 100%;
+  max-width: none;
   text-align: left;
   padding: 3rem 0;
 }
