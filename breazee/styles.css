@@ -416,6 +416,11 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 0.2rem;
+  color: #36454f;
+}
+
+.footer__social:hover {
+  color: #36454f;
 }
 
 .footer__social svg {
