@@ -374,6 +374,10 @@ a {
   content: "";
 }
 
+.link-arrow-manual::after {
+  content: "";
+}
+
 .article a,
 .legal a,
 .section a,
