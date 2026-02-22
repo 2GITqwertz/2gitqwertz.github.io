@@ -291,7 +291,8 @@ a {
 
 .article,
 .legal {
-  max-width: none;
+  max-width: 760px;
+  margin-inline: auto;
   text-align: left;
   padding: 3rem 0;
 }
@@ -325,6 +326,40 @@ a {
 .legal ul {
   margin: 0.3rem 0 0.8rem;
   padding-left: 1.2rem;
+}
+
+.article p,
+.legal p,
+.article li,
+.legal li {
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.article p + p,
+.legal p + p {
+  margin-top: 0.45rem;
+}
+
+.article h2 + p,
+.legal h2 + p,
+.article h3 + p,
+.legal h3 + p {
+  margin-top: 0.15rem;
+}
+
+.article p a,
+.legal p a,
+.section p a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article p a:hover,
+.legal p a:hover,
+.section p a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .article a,
