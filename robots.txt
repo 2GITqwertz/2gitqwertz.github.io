@@ -16,4 +16,4 @@ Disallow: /breazee/privacy
 Disallow: /breazee/imprint
 Disallow: /hiitrix/imprint
 
-Sitemap: https://2gitqwertz.github.io/sitemap.xml
+Sitemap: https://2git.de/sitemap.xml
