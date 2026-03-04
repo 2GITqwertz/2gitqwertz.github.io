@@ -1,11 +1,11 @@
-/* ===== 2GIT Global Styles ===== */
-
 :root {
-  --bg-dark: #0f172a;
-  --bg-card: #1e293b;
-  --accent: #facc15;
-  --text-main: #ffffff;
-  --text-muted: rgba(255,255,255,0.7);
+  --bg: #070b17;
+  --surface: rgba(14, 24, 47, 0.78);
+  --surface-border: rgba(148, 163, 184, 0.2);
+  --text-main: #e7ecff;
+  --text-muted: #9fb0d9;
+  --accent: #8b5cf6;
+  --accent-2: #22d3ee;
 }
 
 * {
@@ -14,78 +14,171 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg-dark);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text-main);
-  line-height: 1.6;
+  background:
+    radial-gradient(900px 500px at 15% -5%, rgba(99, 102, 241, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(34, 211, 238, 0.24), transparent 60%),
+    var(--bg);
+  line-height: 1.55;
 }
 
-header {
-  padding: 120px 20px 60px;
+.page-shell {
+  width: min(1080px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero,
+.project-section,
+footer {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  margin-top: 1rem;
+  padding: 4rem 2rem;
   text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent-2);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 0 0 1rem 0;
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
 }
 
-h2 {
-  margin-bottom: 1rem;
-}
-
-p {
+.hero-copy {
+  margin: 0 auto;
+  max-width: 720px;
   color: var(--text-muted);
-  max-width: 700px;
-  margin: 0 auto 20px;
+  font-size: 1.05rem;
 }
 
-section {
-  padding: 80px 20px;
-  text-align: center;
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .button {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 0.78rem 1.2rem;
   border-radius: 12px;
-  background: var(--accent);
-  color: black;
   text-decoration: none;
-  font-weight: 600;
-  margin-top: 20px;
-  transition: 0.2s ease;
+  font-weight: 700;
+  color: #0b1020;
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
 }
 
-.button:hover {
-  opacity: 0.85;
+.button--ghost {
+  color: var(--text-main);
+  background: rgba(148, 163, 184, 0.16);
+  border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
-.card {
-  background: var(--bg-card);
-  padding: 40px;
-  border-radius: 16px;
-  text-decoration: none;
-  color: white;
-  width: 260px;
-  transition: 0.2s ease;
+.project-section {
+  margin-top: 1.25rem;
+  padding: 2.4rem 1.4rem;
 }
 
-.card:hover {
-  background: #334155;
+.section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 1.8rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+}
+
+.section-head p {
+  margin-top: 0.7rem;
+  color: var(--text-muted);
 }
 
 .apps {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 18px;
+  padding: 1.15rem;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(15, 23, 42, 0.8);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 181, 253, 0.8);
+}
+
+.card--senet {
+  background: linear-gradient(145deg, rgba(10, 19, 44, 0.92), rgba(33, 53, 102, 0.68));
+}
+
+.card--breazee {
+  background: linear-gradient(145deg, rgba(6, 30, 45, 0.92), rgba(13, 87, 102, 0.58));
+}
+
+.chip {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #c7d2fe;
+  background: rgba(99, 102, 241, 0.22);
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+}
+
+.card h3 {
+  margin: 0.75rem 0 0.45rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  color: #c4b5fd;
+  font-weight: 600;
 }
 
 footer {
-  padding: 60px 20px;
+  margin-top: 1.25rem;
+  padding: 1.2rem;
   text-align: center;
-  font-size: 0.9rem;
-  opacity: 0.6;
+}
+
+footer p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: #c4b5fd;
 }
