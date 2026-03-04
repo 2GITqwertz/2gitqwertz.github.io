@@ -6,14 +6,4 @@ Disallow: /draft/
 Disallow: /dev/
 Disallow: /private/
 
-# Imprint / Impressum nicht indexieren
-Disallow: /imprint
-Disallow: /impressum
-Disallow: /senet/imprint
-Disallow: /privacy
-Disallow: /senet/privacy
-Disallow: /breazee/privacy
-Disallow: /breazee/imprint
-Disallow: /hiitrix/imprint
-
 Sitemap: https://2git.de/sitemap.xml
