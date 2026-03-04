@@ -155,7 +155,8 @@ a {
   align-items: center;
 }
 
-.hero h1 {
+.hero h1,
+.hero .hero-title {
   margin: 0;
   font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 400;

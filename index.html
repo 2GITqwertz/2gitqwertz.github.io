@@ -3,36 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2GIT Studio – Apps, Games & Tools für iOS und Apple Watch</title>
-  <meta name="description" content="Indie apps and digital products by 2GIT for iOS & Apple Watch: Breazee, HIITrix und more. Minimalistic Design, Health-Integration, strong UX.">
+  <title>2GIT Studio – Apps, Games & Tools for iOS and Apple Watch</title>
+  <meta name="description" content="Indie apps and digital products by 2GIT for iOS & Apple Watch: Breazee, Senet Reborn, and more. Minimal design, health integration, and strong UX focus.">
   <meta name="robots" content="index, follow">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="2GIT">
   <link rel="canonical" href="https://2git.de/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="2GIT Studio">
+  <meta property="og:title" content="2GIT Studio – Apps, Games & Tools for iOS and Apple Watch">
+  <meta property="og:description" content="Discover indie apps by 2GIT: Breazee and Senet Reborn for iOS and Apple Watch.">
+  <meta property="og:url" content="https://2git.de/">
+  <meta property="og:image" content="https://2git.de/senet/assets/social/senet-og-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="2GIT Studio project overview with Breazee and Senet Reborn.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2GIT Studio – Apps, Games & Tools for iOS and Apple Watch">
+  <meta name="twitter:description" content="Breazee and Senet Reborn: indie apps by 2GIT for iOS and Apple Watch.">
+  <meta name="twitter:image" content="https://2git.de/senet/assets/social/senet-og-1200x630.png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "2GIT Studio",
+      "url": "https://2git.de/",
+      "email": "info@2git.de"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "2GIT Studio",
+      "url": "https://2git.de/",
+      "inLanguage": "en"
+    }
+  </script>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <h1>2GIT Studio</h1>
-    <p>Apps, Games & Tools für iOS und Apple Watch.</p>
-  </header>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">2GIT HUB</p>
+      <h1>2GIT Studio</h1>
+      <p class="hero-copy">The central entry point to our iOS and Apple Watch projects: modern, clear, and focused on strong product UX.</p>
+      <div class="hero-actions">
+        <a class="button" href="#projekte">Explore projects</a>
+        <a class="button button--ghost" href="/impressum/">Imprint</a>
+      </div>
+    </header>
 
-  <section>
-    <h2>Projekte</h2>
-    <div class="apps">
-      <a class="card" href="/senet/">
-        <h3>Senet Reborn</h3>
-        <p>Ancient Strategy. Modern Precision.</p>
-      </a>
-      <a class="card" href="/breazee/">
-        <h3>Breazee</h3>
-        <p>Apple Watch breathing app focused on calm and clarity, now including Flex breathing (v1.3).</p>
-      </a>
-    </div>
-  </section>
+    <main>
+      <section class="project-section" id="projekte">
+        <div class="section-head">
+          <h2>Featured products</h2>
+          <p>From a calming breathing companion to a tactical board game, each product is built around a clear purpose.</p>
+        </div>
 
-  <footer>
-    <a href="/impressum/">Impressum</a>
-  </footer>
+        <div class="apps">
+          <a class="card card--senet" href="/senet/">
+            <span class="chip">Game · iPhone &amp; iPad</span>
+            <h3>Senet Reborn</h3>
+            <p>Ancient Strategy. Modern Precision.</p>
+            <span class="card-link">Open product page →</span>
+          </a>
+
+          <a class="card card--breazee" href="/breazee/">
+            <span class="chip">Health · Apple Watch</span>
+            <h3>Breazee</h3>
+            <p>Guided breathing with HRV, Box, 4-7-8, and Flex modes — directly on your wrist.</p>
+            <span class="card-link">Open product page →</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2GIT Studio</p>
+      <a href="/impressum/">Imprint</a>
+    </footer>
+  </div>
 </body>
 </html>
