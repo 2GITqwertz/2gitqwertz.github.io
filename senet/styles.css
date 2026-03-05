@@ -408,9 +408,11 @@ a {
 }
 
 .shot img {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 2532 / 1170;
+  object-fit: contain;
+  background: rgba(8, 13, 24, 0.88);
 }
 
 .shot figcaption {
