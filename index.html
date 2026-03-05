@@ -46,21 +46,113 @@
 </head>
 <body>
   <div class="page-shell">
-    <header class="hero">
-      <p class="eyebrow">Indie Product Studio</p>
-      <h1>2GIT Studio</h1>
-      <p class="hero-copy">Wir bauen fokussierte Apps und Games für iOS &amp; Apple Watch – klar im Design, präzise in der UX und sinnvoll im Alltag.</p>
-      <div class="hero-actions">
-        <a class="button" href="#projekte">Projekte entdecken</a>
-        <a class="button button--ghost" href="/impressum/">Impressum</a>
-      </div>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-dot"></span>
+        <span>2GIT Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#features">Features</a>
+        <a href="#projekte">Produkte</a>
+        <a href="/impressum/">Impressum</a>
+      </nav>
+      <a class="button button--ghost" href="#projekte">Explore</a>
     </header>
 
     <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Indie Product Studio</p>
+          <h1>Apps und Games mit klarem Fokus statt Feature-Overload.</h1>
+          <p>2GIT entwickelt präzise digitale Produkte für iPhone, iPad und Apple Watch. Von Health-Routinen bis zu taktischen Spielen mit starker UX-Qualität.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projekte">Projekte entdecken</a>
+            <a class="button button--ghost" href="/impressum/">Kontakt</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <strong>2</strong>
+              <span>Produkte live</span>
+            </div>
+            <div>
+              <strong>iOS + watchOS</strong>
+              <span>Native Experiences</span>
+            </div>
+            <div>
+              <strong>UX First</strong>
+              <span>Design mit Funktion</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Produktvorschau">
+          <p class="panel-label">Now Shipping</p>
+          <article class="mini-card">
+            <img src="/senet/assets/icons/Senet_App_Logo.png" alt="Senet Icon" width="52" height="52">
+            <div>
+              <h2>Senet Reborn</h2>
+              <p>Ancient Strategy. Modern Precision.</p>
+              <a href="/senet/">Zur Produktseite</a>
+            </div>
+          </article>
+          <article class="mini-card">
+            <img src="/breazee/assets/App_Icon_Breazee.png" alt="Breazee Icon" width="52" height="52">
+            <div>
+              <h2>Breazee</h2>
+              <p>Guided Breathing für Apple Watch.</p>
+              <a href="/breazee/">Zur Produktseite</a>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="logo-strip" aria-label="Plattformen">
+        <span>iPhone</span>
+        <span>iPad</span>
+        <span>Apple Watch</span>
+        <span>App Store</span>
+        <span>Indie Built</span>
+      </section>
+
+      <section class="feature-section" id="features">
+        <div class="section-head">
+          <p class="eyebrow">Core Values</p>
+          <h2>Produktqualität über Quantität</h2>
+          <p>Die Main-Site folgt jetzt einer Struktur nach Cruip-Landing-Vorlage: klarer Hero, fokussierte Feature-Blöcke, starke CTA-Führung.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Focused UX</h3>
+            <p>Jeder Flow ist auf einen klaren Use Case optimiert.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Native Plattformen</h3>
+            <p>Apple-Ökosystem nativ gedacht statt Portierungs-Layer.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Design Systeme</h3>
+            <p>Konsistente visuelle Sprache über alle Produktseiten.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Performance</h3>
+            <p>Statische Seitenstruktur mit schneller Time to Interactive.</p>
+          </article>
+          <article class="feature-card">
+            <h3>SEO-Basis</h3>
+            <p>Saubere Meta-Daten und semantische Inhaltsstruktur.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Wartbarkeit</h3>
+            <p>Klare HTML/CSS-Struktur für schnelle zukünftige Iterationen.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="project-section" id="projekte">
         <div class="section-head">
+          <p class="eyebrow">Products</p>
           <h2>Aktuelle Produkte</h2>
-          <p>Vom entschleunigten Atem-Coach bis zum taktischen Brettspiel – jede App hat einen klaren Fokus.</p>
+          <p>Vom entschleunigten Atem-Coach bis zum taktischen Brettspiel. Jedes Produkt hat einen präzisen Zweck.</p>
         </div>
 
         <div class="apps">
@@ -74,14 +166,23 @@
           <a class="card card--breazee" href="/breazee/">
             <span class="chip">Health · Apple Watch</span>
             <h3>Breazee</h3>
-            <p>Guided breathing mit HRV, Box, 4-7-8 und Flex-Modus – direkt am Handgelenk.</p>
+            <p>Guided breathing mit HRV, Box, 4-7-8 und Flex-Modus.</p>
             <span class="card-link">Zur Produktseite →</span>
           </a>
         </div>
       </section>
+
+      <section class="cta-band">
+        <h2>Build less noise. Ship more clarity.</h2>
+        <p>Entdecke die aktuellen 2GIT-Produkte oder starte direkt mit Senet und Breazee.</p>
+        <div class="hero-actions">
+          <a class="button" href="/senet/">Senet ansehen</a>
+          <a class="button button--ghost" href="/breazee/">Breazee ansehen</a>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>© 2GIT Studio</p>
       <a href="/impressum/">Impressum</a>
     </footer>
