@@ -539,6 +539,16 @@ a {
   margin: 1rem 0;
 }
 
+.support-email {
+  display: inline-block;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-weight: 700;
+  color: #f6db92;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
+}
+
 .support-grid {
   display: grid;
   gap: 0.95rem;
