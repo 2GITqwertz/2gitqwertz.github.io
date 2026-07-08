@@ -69,6 +69,7 @@ a {
   min-height: calc(100vh - 2.75rem);
   position: relative;
   overflow: hidden;
+  pointer-events: none !important;
   background:
     radial-gradient(34rem 24rem at 8% 12%, rgba(255, 255, 255, 0.05), transparent 62%),
     radial-gradient(28rem 22rem at 88% 18%, rgba(196, 196, 196, 0.08), transparent 58%),
@@ -84,9 +85,24 @@ a {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
   box-shadow:
     0 0 0 4rem rgba(255, 255, 255, 0.025),
     0 0 0 9rem rgba(200, 200, 200, 0.02);
+}
+
+.hero__copy--full > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto !important;
+}
+
+.hero__links,
+.cta,
+.hero__imprint {
+  position: relative;
+  z-index: 3;
 }
 
 .eyebrow {
