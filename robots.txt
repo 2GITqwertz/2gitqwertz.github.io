@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Entwicklungs- und interne Bereiche blockieren
+# Development and internal areas
 Disallow: /draft/
 Disallow: /dev/
 Disallow: /private/
